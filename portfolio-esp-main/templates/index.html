@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Portfolio de desarrollador web - HTML, Python, CSS, JavaScript" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Mi Portafolio - Desarrollador Web</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">INICIO</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">SOBRE MÍ</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">HABILIDADES</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#feedback">contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <!-- Vista previa -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">Sobre Mí</h1>
+        <p class="home__subtitle">DESARROLLADOR WEB, PROGRAMADOR PYTHON</p>
+      </section>
+      
+      <!-- Acerca de mí -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">SOBRE MÍ</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            ¡Hola! Tengo conocimientos en programación con HTML, Python y Roblox Studio. 
+            También manejo un poco de CSS y JavaScript, aunque estos últimos me resultan más desafiantes. 
+            Me apasiona el desarrollo web y estoy constantemente aprendiendo nuevas tecnologías.
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/profile.png"
+            alt="Foto de perfil"
+            width="250"
+            height="250"
+          />
+        </div>
+      </section>
+      
+      <!-- Sección de competencias -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">MIS HABILIDADES</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/python.png"
+                alt="Python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Programación de scripts</span>
+              <button class="skill__button" type="button" onclick="window.open('python-project.html', '_blank')">VER PROYECTO</button>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/discord.png"
+                alt="Discord Bot"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Bots y automatización</span>
+              <button class="skill__button" type="button" onclick="window.open('discord-project.html', '_blank')">VER PROYECTO</button>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/github.png"
+                alt="HTML"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Mi cuenta de GitHub</span>
+              <button class="skill__button" type="button" onclick="window.open('https://github.com/Blackxon', '_blank')">VER PROYECTO</button>
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/db.webp"
+                alt="SQL"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Bases de datos</span>
+              <button class="skill__button" type="button" onclick="window.open('https://github.com/Blackxon/proyecto1', '_blank')">VER PROYECTO</button>
+            </li>
+          </ul>
+        </form>
+        
+      </section>
+      
+      <!-- Formulario de contacto -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">CONTACTO</h2>
+        <form action="/contact" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Ingresa tu email" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Escribe tu mensaje"></textarea>
+          </label>
+          <button class="form__button" type="submit">ENVIAR</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__content">
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        <div class="footer__social">
+          <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
